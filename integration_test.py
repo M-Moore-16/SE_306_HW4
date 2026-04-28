@@ -20,7 +20,7 @@ class TestDivAndSub:
         (20, 5, -1),  # Positive numbers
         (-8, 2, -6),  # Negative numbers
         (0, 5, -5),  # Zero case
-        (12, -2, -5),  # Mixed case
+        (12, -2, -4),  # Mixed case
     ])
     def test_div_and_sub(self, a, b, expected):
         assert calculator.Sub(calculator.Div(a,b),b) == expected
