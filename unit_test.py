@@ -60,3 +60,4 @@ class TestMod:
     ])
     def test_Mod(self, a, b, expected):
         assert calculator.Mod(a,b) == expected
+
