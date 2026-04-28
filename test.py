@@ -4,7 +4,7 @@ import calculator
 class TestAdd:
    
     @pytest.mark.parametrize("a,b,expected", [
-        (1, 2, 4),           # positive numbers
+        (1, 2, 3),           # positive numbers
         (-2, -4, -6),        # negative numbers
         (0, 5, 5),           # zero case
         (-1, 1, 0),          # mixed signs
