@@ -1,6 +1,7 @@
 import pytest
 from program import calculator
 
+# 5 Test cases for the Add function
 class TestAdd:
    
     @pytest.mark.parametrize("a,b,expected", [
@@ -12,7 +13,8 @@ class TestAdd:
     ])
     def test_add(self, a, b, expected):
         assert calculator.Add(a, b) == expected
-    
+
+# 5 Test cases for the Sub function    
 class TestSub:
     
     @pytest.mark.parametrize("a,b,expected", [
@@ -24,7 +26,8 @@ class TestSub:
     ])
     def test_sub(self, a, b, expected):
         assert calculator.Sub(a,b) == expected
-        
+    
+# 5 Test cases for the Multi function        
 class TestMulti:
     
     @pytest.mark.parametrize("a,b,expected", [
@@ -36,7 +39,8 @@ class TestMulti:
     ])
     def test_Multi(self, a, b, expected):
         assert calculator.Multi(a,b) == expected
-        
+
+# 5 Test cases for the Div function        
 class TestDiv:
     
     @pytest.mark.parametrize("a,b,expected", [
@@ -48,7 +52,8 @@ class TestDiv:
     ])
     def test_Div(self, a, b, expected):
         assert calculator.Div(a,b) == expected
-        
+ 
+# 5 Test cases for the Mod function        
 class TestMod:
     
     @pytest.mark.parametrize("a,b,expected", [
