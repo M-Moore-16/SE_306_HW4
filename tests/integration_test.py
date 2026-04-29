@@ -1,6 +1,5 @@
 import pytest
-import program.calculator as calculator
-
+from program import calculator
 # test multiplication and addition integration        
 class TestMultiAndAdd:
     
