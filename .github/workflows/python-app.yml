@@ -38,7 +38,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Unit Test with pytest # This step runs the unit tests
       run: |
-        pytest tests/unit_test.py -v  
+        pytest unit_test.py -v  
     - name: Integration Test with pytest # This step runs the integration tests
       run: |
-        pytest tests/integration_test.py -v
+        pytest integration_test.py -v
