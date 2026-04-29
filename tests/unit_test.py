@@ -48,7 +48,7 @@ class TestDiv:
         (-4, 2, -2),  # Negative numbers
         (0, 5, 0),  # Zero case
         (6, -2, -3),  # Mixed case
-        (400, 200, 3),  # Large numbers
+        (400, 200, 2),  # Large numbers
     ])
     def test_Div(self, a, b, expected):
         assert calculator.Div(a,b) == expected
