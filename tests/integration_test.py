@@ -23,3 +23,14 @@ class TestDivAndSub:
     ])
     def test_div_and_sub(self, a, b, expected):
         assert calculator.Sub(calculator.Div(a,b),b) == expected
+        
+class TestModAndMulti:
+    
+    @pytest.mark.parametrize("a,b,c, expected", [
+        (5, 4, 2, 0), # Positive numbers
+        (-3, 3, 2, 1), # Negative numbers
+        (1, 0, 1, 0), # Zero case
+        (-1, -1, 1, 0), # Mixed case
+    ])
+    def test_Mod_and_multi(self, a, b, c, expected):
+        assert calculator.Mod(calculator.Multi(a,b), c) == expected
