@@ -1,6 +1,6 @@
 import pytest
 from program import calculator
-# test Multiplication and Addition integration        
+# test Multiplication and Addition integration.        
 class TestMultiAndAdd:
     
     @pytest.mark.parametrize("a,b,expected", [
